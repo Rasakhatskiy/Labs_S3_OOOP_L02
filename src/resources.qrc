@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/res">
-        <file>forms/stylesheet.qss</file>
-        <file>Forms/ico.ico</file>
-        <file>Forms/stylesheet-branch-closed.png</file>
-        <file>Forms/stylesheet-branch-open.png</file>
-    </qresource>
-</RCC>
