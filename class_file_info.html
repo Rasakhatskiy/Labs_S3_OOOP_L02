@@ -72,6 +72,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class made for saving info on disk (you cannot do this with QFileInfo)  
+ <a href="class_file_info.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="fileinfo_8hpp_source.html">fileinfo.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -84,37 +87,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad887b80310a83e9af82b5447b2beb632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="class_file_info.html#ad887b80310a83e9af82b5447b2beb632">More...</a><br /></td></tr>
 <tr class="separator:ad887b80310a83e9af82b5447b2beb632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e4e3fa09cd3c46b9506369e751146d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#a3e4e3fa09cd3c46b9506369e751146d0">FileInfo</a> (const QFileInfo &amp;fileInfo)</td></tr>
-<tr class="memdesc:a3e4e3fa09cd3c46b9506369e751146d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies parameters from QFileInfo to <a class="el" href="class_file_info.html">FileInfo</a>.  <a href="class_file_info.html#a3e4e3fa09cd3c46b9506369e751146d0">More...</a><br /></td></tr>
+<tr class="memdesc:a3e4e3fa09cd3c46b9506369e751146d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies parameters from QFileInfo to <a class="el" href="class_file_info.html" title="Class made for saving info on disk (you cannot do this with QFileInfo)">FileInfo</a>.  <a href="class_file_info.html#a3e4e3fa09cd3c46b9506369e751146d0">More...</a><br /></td></tr>
 <tr class="separator:a3e4e3fa09cd3c46b9506369e751146d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8da82446a9df3f17451ab63310233abe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#a8da82446a9df3f17451ab63310233abe">FileInfo</a> (const QString &amp;fullpath, const QDateTime &amp;dateOfCreation, const QDateTime &amp;dateOfModification, const uint64_t &amp;length, const bool &amp;<a class="el" href="class_file_info.html#ab7840bb4fca4b3d9938c1b3f0e1352ef">isFile</a>, const bool &amp;<a class="el" href="class_file_info.html#a1c0213518da428b8b85e7fb55927dccc">isSymLink</a>, const QString &amp;symlinkPath, const bool &amp;<a class="el" href="class_file_info.html#aa941e087c82c28ff498d9d3dec551b1f">isDir</a>)</td></tr>
 <tr class="memdesc:a8da82446a9df3f17451ab63310233abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor by fields.  <a href="class_file_info.html#a8da82446a9df3f17451ab63310233abe">More...</a><br /></td></tr>
 <tr class="separator:a8da82446a9df3f17451ab63310233abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3265d964cbb5dc3b67d0072f76a0842a"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#a3265d964cbb5dc3b67d0072f76a0842a">getFullpath</a> () const</td></tr>
+<tr class="memdesc:a3265d964cbb5dc3b67d0072f76a0842a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns full path of file.  <a href="class_file_info.html#a3265d964cbb5dc3b67d0072f76a0842a">More...</a><br /></td></tr>
 <tr class="separator:a3265d964cbb5dc3b67d0072f76a0842a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4079fa4b44007611e13bb38396e60201"><td class="memItemLeft" align="right" valign="top">QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#a4079fa4b44007611e13bb38396e60201">getDateOfCreation</a> () const</td></tr>
+<tr class="memdesc:a4079fa4b44007611e13bb38396e60201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns date of creation.  <a href="class_file_info.html#a4079fa4b44007611e13bb38396e60201">More...</a><br /></td></tr>
 <tr class="separator:a4079fa4b44007611e13bb38396e60201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef427a5318142c38e7d4110d26c06510"><td class="memItemLeft" align="right" valign="top">QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#aef427a5318142c38e7d4110d26c06510">getDateOfModification</a> () const</td></tr>
+<tr class="memdesc:aef427a5318142c38e7d4110d26c06510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns date of modification.  <a href="class_file_info.html#aef427a5318142c38e7d4110d26c06510">More...</a><br /></td></tr>
 <tr class="separator:aef427a5318142c38e7d4110d26c06510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7840bb4fca4b3d9938c1b3f0e1352ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#ab7840bb4fca4b3d9938c1b3f0e1352ef">isFile</a> () const</td></tr>
-<tr class="memdesc:ab7840bb4fca4b3d9938c1b3f0e1352ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">isFile  <a href="class_file_info.html#ab7840bb4fca4b3d9938c1b3f0e1352ef">More...</a><br /></td></tr>
+<tr class="memdesc:ab7840bb4fca4b3d9938c1b3f0e1352ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">is file  <a href="class_file_info.html#ab7840bb4fca4b3d9938c1b3f0e1352ef">More...</a><br /></td></tr>
 <tr class="separator:ab7840bb4fca4b3d9938c1b3f0e1352ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c0213518da428b8b85e7fb55927dccc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#a1c0213518da428b8b85e7fb55927dccc">isSymLink</a> () const</td></tr>
-<tr class="memdesc:a1c0213518da428b8b85e7fb55927dccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">isSymLink  <a href="class_file_info.html#a1c0213518da428b8b85e7fb55927dccc">More...</a><br /></td></tr>
+<tr class="memdesc:a1c0213518da428b8b85e7fb55927dccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">is symLink  <a href="class_file_info.html#a1c0213518da428b8b85e7fb55927dccc">More...</a><br /></td></tr>
 <tr class="separator:a1c0213518da428b8b85e7fb55927dccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af59faeec8ad6e35ff72ce09c5769a3b3"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#af59faeec8ad6e35ff72ce09c5769a3b3">getSymlinkPath</a> () const</td></tr>
-<tr class="memdesc:af59faeec8ad6e35ff72ce09c5769a3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">getSymlinkPath  <a href="class_file_info.html#af59faeec8ad6e35ff72ce09c5769a3b3">More...</a><br /></td></tr>
+<tr class="memdesc:af59faeec8ad6e35ff72ce09c5769a3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns symlink path.  <a href="class_file_info.html#af59faeec8ad6e35ff72ce09c5769a3b3">More...</a><br /></td></tr>
 <tr class="separator:af59faeec8ad6e35ff72ce09c5769a3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa941e087c82c28ff498d9d3dec551b1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#aa941e087c82c28ff498d9d3dec551b1f">isDir</a> () const</td></tr>
-<tr class="memdesc:aa941e087c82c28ff498d9d3dec551b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">isDir  <a href="class_file_info.html#aa941e087c82c28ff498d9d3dec551b1f">More...</a><br /></td></tr>
+<tr class="memdesc:aa941e087c82c28ff498d9d3dec551b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">is dir.  <a href="class_file_info.html#aa941e087c82c28ff498d9d3dec551b1f">More...</a><br /></td></tr>
 <tr class="separator:aa941e087c82c28ff498d9d3dec551b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d3cadcb23836e50e1b00f50887bba5f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#a2d3cadcb23836e50e1b00f50887bba5f">getLength</a> () const</td></tr>
-<tr class="memdesc:a2d3cadcb23836e50e1b00f50887bba5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">getLength  <a href="class_file_info.html#a2d3cadcb23836e50e1b00f50887bba5f">More...</a><br /></td></tr>
+<tr class="memdesc:a2d3cadcb23836e50e1b00f50887bba5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns file length.  <a href="class_file_info.html#a2d3cadcb23836e50e1b00f50887bba5f">More...</a><br /></td></tr>
 <tr class="separator:a2d3cadcb23836e50e1b00f50887bba5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a431a97616427e935941f840ffddbf9d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_info.html#a431a97616427e935941f840ffddbf9d1">construct</a> (const QFileInfo &amp;fileInfo)</td></tr>
-<tr class="memdesc:a431a97616427e935941f840ffddbf9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies parameters from QFileInfo to <a class="el" href="class_file_info.html">FileInfo</a>.  <a href="class_file_info.html#a431a97616427e935941f840ffddbf9d1">More...</a><br /></td></tr>
+<tr class="memdesc:a431a97616427e935941f840ffddbf9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies parameters from QFileInfo to <a class="el" href="class_file_info.html" title="Class made for saving info on disk (you cannot do this with QFileInfo)">FileInfo</a>.  <a href="class_file_info.html#a431a97616427e935941f840ffddbf9d1">More...</a><br /></td></tr>
 <tr class="separator:a431a97616427e935941f840ffddbf9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -137,7 +143,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a6e6ecfff4ce39007bd523c3f9eff22ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_file_info.html">FileInfo</a> class made for saving info on disk (you cannot do this with QFileInfo) </p>
+<div class="textblock"><p>Class made for saving info on disk (you cannot do this with QFileInfo) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad887b80310a83e9af82b5447b2beb632"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad887b80310a83e9af82b5447b2beb632">&#9670;&nbsp;</a></span>FileInfo() <span class="overload">[1/3]</span></h2>
@@ -187,7 +193,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Copies parameters from QFileInfo to <a class="el" href="class_file_info.html">FileInfo</a>. </p>
+<p>Copies parameters from QFileInfo to <a class="el" href="class_file_info.html" title="Class made for saving info on disk (you cannot do this with QFileInfo)">FileInfo</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileInfo</td><td></td></tr>
@@ -301,7 +307,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Copies parameters from QFileInfo to <a class="el" href="class_file_info.html">FileInfo</a>. </p>
+<p>Copies parameters from QFileInfo to <a class="el" href="class_file_info.html" title="Class made for saving info on disk (you cannot do this with QFileInfo)">FileInfo</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileInfo</td><td></td></tr>
@@ -325,6 +331,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns date of creation. </p>
 <dl class="section return"><dt>Returns</dt><dd>Date of creation </dd></dl>
 
 </div>
@@ -343,6 +351,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns date of modification. </p>
 <dl class="section return"><dt>Returns</dt><dd>Date of modification </dd></dl>
 
 </div>
@@ -361,7 +371,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Full path of file </dd></dl>
+
+<p>Returns full path of file. </p>
+<dl class="section return"><dt>Returns</dt><dd>Full path of file. </dd></dl>
 
 </div>
 </div>
@@ -380,8 +392,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>getLength </p>
-<dl class="section return"><dt>Returns</dt><dd>file length </dd></dl>
+<p>returns file length. </p>
+<dl class="section return"><dt>Returns</dt><dd>file length in bytes. </dd></dl>
 
 </div>
 </div>
@@ -400,8 +412,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>getSymlinkPath </p>
-<dl class="section return"><dt>Returns</dt><dd>Path reffered by symlink </dd></dl>
+<p>Returns symlink path. </p>
+<dl class="section return"><dt>Returns</dt><dd>Path reffered by symlink. </dd></dl>
 
 </div>
 </div>
@@ -420,8 +432,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>isDir </p>
-<dl class="section return"><dt>Returns</dt><dd>Is file directory </dd></dl>
+<p>is dir. </p>
+<dl class="section return"><dt>Returns</dt><dd>Is file directory. </dd></dl>
 
 </div>
 </div>
@@ -440,7 +452,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>isFile </p>
+<p>is file </p>
 <dl class="section return"><dt>Returns</dt><dd>Is file file </dd></dl>
 
 </div>
@@ -460,7 +472,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>isSymLink </p>
+<p>is symLink </p>
 <dl class="section return"><dt>Returns</dt><dd>Is file symlink </dd></dl>
 
 </div>

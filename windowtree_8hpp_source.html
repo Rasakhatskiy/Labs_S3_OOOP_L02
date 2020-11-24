@@ -80,28 +80,29 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_window_tree.html">WindowTree</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_window_tree.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_window_tree.html">WindowTree</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_window_tree.html">WindowTree</a>(<span class="keyword">const</span> QList&lt;FileInfo&gt;&amp; data, QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    ~<a class="code" href="class_window_tree.html">WindowTree</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_window_tree.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_window_tree.html">WindowTree</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> on_button_ok_clicked();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Ui::WindowTree *ui;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_window_tree.html#ae6b54d4d7cf1cfaba63f37b82c5ea96e">setupTree</a>(<span class="keyword">const</span> QList&lt;FileInfo&gt;&amp; data);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // WINDOWTREE_HPP</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_window_tree.html">WindowTree</a>(<span class="keyword">const</span> QList&lt;FileInfo&gt;&amp; data, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ~<a class="code" href="class_window_tree.html">WindowTree</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> on_button_ok_clicked();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Ui::WindowTree *ui;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_window_tree.html#ae6b54d4d7cf1cfaba63f37b82c5ea96e">setupTree</a>(<span class="keyword">const</span> QList&lt;FileInfo&gt;&amp; data);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif // WINDOWTREE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> WindowMain.hpp:21</div></div>
 <div class="ttc" id="aclass_window_tree_html_ae6b54d4d7cf1cfaba63f37b82c5ea96e"><div class="ttname"><a href="class_window_tree.html#ae6b54d4d7cf1cfaba63f37b82c5ea96e">WindowTree::setupTree</a></div><div class="ttdeci">void setupTree(const QList&lt; FileInfo &gt; &amp;data)</div><div class="ttdoc">writes tree to tree model.</div><div class="ttdef"><b>Definition:</b> windowtree.cpp:22</div></div>
-<div class="ttc" id="aclass_window_tree_html"><div class="ttname"><a href="class_window_tree.html">WindowTree</a></div><div class="ttdef"><b>Definition:</b> windowtree.hpp:12</div></div>
+<div class="ttc" id="aclass_window_tree_html"><div class="ttname"><a href="class_window_tree.html">WindowTree</a></div><div class="ttdoc">Window for printing filesystem to tree.</div><div class="ttdef"><b>Definition:</b> windowtree.hpp:16</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

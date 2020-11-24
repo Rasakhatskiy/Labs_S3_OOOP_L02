@@ -99,72 +99,71 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;advapi32.lib&quot;)</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#pragma comment(lib,&quot;user32.lib&quot;)</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_metadata.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_metadata.html">Metadata</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    HANDLE <a class="code" href="class_metadata.html#a338aaa51a0ccff561218140b3ef92334">openFileRead</a>(<span class="keyword">const</span> QString&amp; path);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    HANDLE <a class="code" href="class_metadata.html#a3f97edc64ee7198de551866ee7f00835">openFileWrite</a>(<span class="keyword">const</span> QString&amp; path);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QPair&lt;QDateTime, QDateTime&gt; <a class="code" href="class_metadata.html#a2be9f88810abdcb22e305699b4c85f3c">getTime</a>(HANDLE hFile);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_metadata.html#a6ef3ded768033f4b5980aa18b6c0811e">setTime</a>(</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        HANDLE hFile,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        QPair&lt;QDateTime,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        QDateTime&gt; pair);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QString <a class="code" href="class_metadata.html#acadd95a61a31f0e1cbd9b4a961684bc7">getOwner</a>(HANDLE hFile);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_metadata.html#a8c8b085ea1a70295c1ceb07954c91da1">setOwner</a>(</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        HANDLE hFile,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">const</span> QString&amp; ownerName);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> matchesCriterion(</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">const</span> QString&amp; path,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isAND);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_metadata.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_metadata.html">Metadata</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    HANDLE <a class="code" href="class_metadata.html#a338aaa51a0ccff561218140b3ef92334">openFileRead</a>(<span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    HANDLE <a class="code" href="class_metadata.html#a3f97edc64ee7198de551866ee7f00835">openFileWrite</a>(<span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QPair&lt;QDateTime, QDateTime&gt; <a class="code" href="class_metadata.html#a2be9f88810abdcb22e305699b4c85f3c">getTime</a>(HANDLE hFile);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_metadata.html#a6ef3ded768033f4b5980aa18b6c0811e">setTime</a>(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        HANDLE hFile,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        QPair&lt;QDateTime,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        QDateTime&gt; pair);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QString <a class="code" href="class_metadata.html#acadd95a61a31f0e1cbd9b4a961684bc7">getOwner</a>(HANDLE hFile);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_metadata.html#a8c8b085ea1a70295c1ceb07954c91da1">setOwner</a>(</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        HANDLE hFile,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">const</span> QString&amp; ownerName);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> matchesCriterion(</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">const</span> QString&amp; path,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isAND);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">   92</a></span>&#160;    QDateTime <a class="code" href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">dateTimeCreation</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">   95</a></span>&#160;    QDateTime <a class="code" href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">dateTimeModification</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">   98</a></span>&#160;    uint64_t <a class="code" href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">length</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">  101</a></span>&#160;    QString <a class="code" href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">owner</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">   96</a></span>&#160;    QDateTime <a class="code" href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">dateTimeCreation</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">  101</a></span>&#160;    QDateTime <a class="code" href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">dateTimeModification</a>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">  104</a></span>&#160;    QString <a class="code" href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">extension</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_metadata.html#a36401148621d78fa15716089d65922d9">save</a>(<span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">  106</a></span>&#160;    uint64_t <a class="code" href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">length</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">  111</a></span>&#160;    QString <a class="code" href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">owner</a>;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="class_metadata.html#ae293e3f026495063f4720fa2a7a87912">Metadata</a>(<span class="keyword">const</span> QString&amp; path);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;\</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    Metadata(</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">const</span> QDateTime&amp; <a class="code" href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">dateTimeCreation</a>,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">const</span> QDateTime&amp; <a class="code" href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">dateTimeModification</a>,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">const</span> uint64_t&amp; <a class="code" href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">length</a>,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">const</span> QString&amp; <a class="code" href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">owner</a>,</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">const</span> QString&amp; <a class="code" href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">extension</a>);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">static</span> SYSTEMTIME <a class="code" href="class_metadata.html#a19c9d0206b401b7e4da20ab37016ca5f">dateTimeFromQDateTime</a>(<span class="keyword">const</span> QDateTime&amp; dateTime);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    QList&lt;FileInfo&gt; <a class="code" href="class_metadata.html#a4fb96dc784539c0dce81f2c0c0484c66">doSearch</a>(</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">const</span> QString&amp; startSearchPath,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isAND);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;};</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif // METADATA_HPP</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">  116</a></span>&#160;    QString <a class="code" href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">extension</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_metadata.html#a36401148621d78fa15716089d65922d9">save</a>(<span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="class_metadata.html#ae293e3f026495063f4720fa2a7a87912">Metadata</a>(<span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;\</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    Metadata(</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keyword">const</span> QDateTime&amp; <a class="code" href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">dateTimeCreation</a>,</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keyword">const</span> QDateTime&amp; <a class="code" href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">dateTimeModification</a>,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keyword">const</span> uint64_t&amp; <a class="code" href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">length</a>,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keyword">const</span> QString&amp; <a class="code" href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">owner</a>,</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keyword">const</span> QString&amp; <a class="code" href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">extension</a>);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">static</span> SYSTEMTIME <a class="code" href="class_metadata.html#a19c9d0206b401b7e4da20ab37016ca5f">dateTimeFromQDateTime</a>(<span class="keyword">const</span> QDateTime&amp; dateTime);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    QList&lt;FileInfo&gt; <a class="code" href="class_metadata.html#a4fb96dc784539c0dce81f2c0c0484c66">doSearch</a>(</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">const</span> QString&amp; startSearchPath,</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isAND);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;};</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif // METADATA_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_metadata_html_a4fb96dc784539c0dce81f2c0c0484c66"><div class="ttname"><a href="class_metadata.html#a4fb96dc784539c0dce81f2c0c0484c66">Metadata::doSearch</a></div><div class="ttdeci">QList&lt; FileInfo &gt; doSearch(const QString &amp;startSearchPath, const bool &amp;isAND)</div><div class="ttdoc">static function to search by this metadata.</div><div class="ttdef"><b>Definition:</b> metadata.cpp:289</div></div>
 <div class="ttc" id="aclass_metadata_html_a8c8b085ea1a70295c1ceb07954c91da1"><div class="ttname"><a href="class_metadata.html#a8c8b085ea1a70295c1ceb07954c91da1">Metadata::setOwner</a></div><div class="ttdeci">bool setOwner(HANDLE hFile, const QString &amp;ownerName)</div><div class="ttdoc">changes owner of te file.</div><div class="ttdef"><b>Definition:</b> metadata.cpp:237</div></div>
-<div class="ttc" id="aclass_metadata_html_af801e315949c56a4f09b8a4b3fa97815"><div class="ttname"><a href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">Metadata::owner</a></div><div class="ttdeci">QString owner</div><div class="ttdef"><b>Definition:</b> metadata.hpp:101</div></div>
-<div class="ttc" id="aclass_metadata_html_a9718484b941b5658f0528cdbfdb691a4"><div class="ttname"><a href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">Metadata::length</a></div><div class="ttdeci">uint64_t length</div><div class="ttdef"><b>Definition:</b> metadata.hpp:98</div></div>
+<div class="ttc" id="aclass_metadata_html_af801e315949c56a4f09b8a4b3fa97815"><div class="ttname"><a href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">Metadata::owner</a></div><div class="ttdeci">QString owner</div><div class="ttdoc">Name of owner.</div><div class="ttdef"><b>Definition:</b> metadata.hpp:111</div></div>
+<div class="ttc" id="aclass_metadata_html_a9718484b941b5658f0528cdbfdb691a4"><div class="ttname"><a href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">Metadata::length</a></div><div class="ttdeci">uint64_t length</div><div class="ttdoc">Length of file in bytes.</div><div class="ttdef"><b>Definition:</b> metadata.hpp:106</div></div>
 <div class="ttc" id="aclass_metadata_html_a6ef3ded768033f4b5980aa18b6c0811e"><div class="ttname"><a href="class_metadata.html#a6ef3ded768033f4b5980aa18b6c0811e">Metadata::setTime</a></div><div class="ttdeci">bool setTime(HANDLE hFile, QPair&lt; QDateTime, QDateTime &gt; pair)</div><div class="ttdoc">Sets file time of creation and modification to given. Sets date of last access as current time.</div><div class="ttdef"><b>Definition:</b> metadata.cpp:106</div></div>
-<div class="ttc" id="aclass_metadata_html_a07edee9bc3e10615a72c20c6247517f9"><div class="ttname"><a href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">Metadata::extension</a></div><div class="ttdeci">QString extension</div><div class="ttdef"><b>Definition:</b> metadata.hpp:104</div></div>
+<div class="ttc" id="aclass_metadata_html_a07edee9bc3e10615a72c20c6247517f9"><div class="ttname"><a href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">Metadata::extension</a></div><div class="ttdeci">QString extension</div><div class="ttdoc">File extension.</div><div class="ttdef"><b>Definition:</b> metadata.hpp:116</div></div>
 <div class="ttc" id="aclass_metadata_html_a338aaa51a0ccff561218140b3ef92334"><div class="ttname"><a href="class_metadata.html#a338aaa51a0ccff561218140b3ef92334">Metadata::openFileRead</a></div><div class="ttdeci">HANDLE openFileRead(const QString &amp;path)</div><div class="ttdoc">Opens file for read.</div><div class="ttdef"><b>Definition:</b> metadata.cpp:42</div></div>
 <div class="ttc" id="aclass_metadata_html_acadd95a61a31f0e1cbd9b4a961684bc7"><div class="ttname"><a href="class_metadata.html#acadd95a61a31f0e1cbd9b4a961684bc7">Metadata::getOwner</a></div><div class="ttdeci">QString getOwner(HANDLE hFile)</div><div class="ttdoc">gets name of owner from the file.</div><div class="ttdef"><b>Definition:</b> metadata.cpp:128</div></div>
 <div class="ttc" id="aclass_metadata_html_a3f97edc64ee7198de551866ee7f00835"><div class="ttname"><a href="class_metadata.html#a3f97edc64ee7198de551866ee7f00835">Metadata::openFileWrite</a></div><div class="ttdeci">HANDLE openFileWrite(const QString &amp;path)</div><div class="ttdoc">Opens file for write.</div><div class="ttdef"><b>Definition:</b> metadata.cpp:54</div></div>
@@ -172,9 +171,9 @@ $(function() {
 <div class="ttc" id="aclass_metadata_html_a19c9d0206b401b7e4da20ab37016ca5f"><div class="ttname"><a href="class_metadata.html#a19c9d0206b401b7e4da20ab37016ca5f">Metadata::dateTimeFromQDateTime</a></div><div class="ttdeci">static SYSTEMTIME dateTimeFromQDateTime(const QDateTime &amp;dateTime)</div><div class="ttdoc">static function to convert from QDateTime to SYSTEMTIME from win32 API.</div><div class="ttdef"><b>Definition:</b> metadata.cpp:277</div></div>
 <div class="ttc" id="aclass_metadata_html_a36401148621d78fa15716089d65922d9"><div class="ttname"><a href="class_metadata.html#a36401148621d78fa15716089d65922d9">Metadata::save</a></div><div class="ttdeci">bool save(const QString &amp;path)</div><div class="ttdoc">saves the metadata values to file.</div><div class="ttdef"><b>Definition:</b> metadata.cpp:254</div></div>
 <div class="ttc" id="aclass_metadata_html_ae293e3f026495063f4720fa2a7a87912"><div class="ttname"><a href="class_metadata.html#ae293e3f026495063f4720fa2a7a87912">Metadata::Metadata</a></div><div class="ttdeci">Metadata(const QString &amp;path)</div><div class="ttdoc">Metadata constructor reads metadata from file.</div><div class="ttdef"><b>Definition:</b> metadata.cpp:3</div></div>
-<div class="ttc" id="aclass_metadata_html_a0f2be865df325070317d5aa2ec26be16"><div class="ttname"><a href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">Metadata::dateTimeCreation</a></div><div class="ttdeci">QDateTime dateTimeCreation</div><div class="ttdef"><b>Definition:</b> metadata.hpp:92</div></div>
-<div class="ttc" id="aclass_metadata_html"><div class="ttname"><a href="class_metadata.html">Metadata</a></div><div class="ttdef"><b>Definition:</b> metadata.hpp:32</div></div>
-<div class="ttc" id="aclass_metadata_html_ab59b3283c20cba1d7376e3bb00802d12"><div class="ttname"><a href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">Metadata::dateTimeModification</a></div><div class="ttdeci">QDateTime dateTimeModification</div><div class="ttdef"><b>Definition:</b> metadata.hpp:95</div></div>
+<div class="ttc" id="aclass_metadata_html_a0f2be865df325070317d5aa2ec26be16"><div class="ttname"><a href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">Metadata::dateTimeCreation</a></div><div class="ttdeci">QDateTime dateTimeCreation</div><div class="ttdoc">Date and time of creation.</div><div class="ttdef"><b>Definition:</b> metadata.hpp:96</div></div>
+<div class="ttc" id="aclass_metadata_html"><div class="ttname"><a href="class_metadata.html">Metadata</a></div><div class="ttdoc">Reads metadata from file in real file system using WIN32 API.</div><div class="ttdef"><b>Definition:</b> metadata.hpp:34</div></div>
+<div class="ttc" id="aclass_metadata_html_ab59b3283c20cba1d7376e3bb00802d12"><div class="ttname"><a href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">Metadata::dateTimeModification</a></div><div class="ttdeci">QDateTime dateTimeModification</div><div class="ttdoc">Date and time of modification.</div><div class="ttdef"><b>Definition:</b> metadata.hpp:101</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

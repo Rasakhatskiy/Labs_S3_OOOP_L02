@@ -71,13 +71,18 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Provides node for constructing tree, that can be applied to tree model.  
+ <a href="class_tree_item.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="treeitem_8hpp_source.html">treeitem.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a069e1b3b5e8b34c293abe0ce69ca5931"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#a069e1b3b5e8b34c293abe0ce69ca5931">TreeItem</a> (const QVector&lt; QVariant &gt; &amp;data, <a class="el" href="class_tree_item.html">TreeItem</a> *parent=nullptr)</td></tr>
 <tr class="separator:a069e1b3b5e8b34c293abe0ce69ca5931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a859429185d908c3e54861bbbfb185425"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#a859429185d908c3e54861bbbfb185425">~TreeItem</a> ()</td></tr>
+<tr class="memitem:a859429185d908c3e54861bbbfb185425"><td class="memItemLeft" align="right" valign="top"><a id="a859429185d908c3e54861bbbfb185425"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#a859429185d908c3e54861bbbfb185425">~TreeItem</a> ()</td></tr>
+<tr class="memdesc:a859429185d908c3e54861bbbfb185425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Deletes all children. <br /></td></tr>
 <tr class="separator:a859429185d908c3e54861bbbfb185425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f432ac0587ca037e80857eefd622f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#ac7f432ac0587ca037e80857eefd622f8">appendChild</a> (<a class="el" href="class_tree_item.html">TreeItem</a> *child)</td></tr>
 <tr class="memdesc:ac7f432ac0587ca037e80857eefd622f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends child to current node.  <a href="class_tree_item.html#ac7f432ac0587ca037e80857eefd622f8">More...</a><br /></td></tr>
@@ -106,15 +111,21 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3f224d18e5bd896d5e2673ce56b61f8e"><td class="memItemLeft" align="right" valign="top">QVector&lt; <a class="el" href="class_tree_item.html">TreeItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#a3f224d18e5bd896d5e2673ce56b61f8e">_children</a></td></tr>
+<tr class="memitem:a3f224d18e5bd896d5e2673ce56b61f8e"><td class="memItemLeft" align="right" valign="top"><a id="a3f224d18e5bd896d5e2673ce56b61f8e"></a>
+QVector&lt; <a class="el" href="class_tree_item.html">TreeItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#a3f224d18e5bd896d5e2673ce56b61f8e">_children</a></td></tr>
+<tr class="memdesc:a3f224d18e5bd896d5e2673ce56b61f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of children nodes. <br /></td></tr>
 <tr class="separator:a3f224d18e5bd896d5e2673ce56b61f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5b4cf0e6a48cc71141d87aef569a34a"><td class="memItemLeft" align="right" valign="top">QVector&lt; QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#ae5b4cf0e6a48cc71141d87aef569a34a">_data</a></td></tr>
+<tr class="memitem:ae5b4cf0e6a48cc71141d87aef569a34a"><td class="memItemLeft" align="right" valign="top"><a id="ae5b4cf0e6a48cc71141d87aef569a34a"></a>
+QVector&lt; QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#ae5b4cf0e6a48cc71141d87aef569a34a">_data</a></td></tr>
+<tr class="memdesc:ae5b4cf0e6a48cc71141d87aef569a34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of data. <br /></td></tr>
 <tr class="separator:ae5b4cf0e6a48cc71141d87aef569a34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2786a2d68f7cd647b6550d4b5e60e58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tree_item.html">TreeItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#ab2786a2d68f7cd647b6550d4b5e60e58">_parent</a></td></tr>
+<tr class="memitem:ab2786a2d68f7cd647b6550d4b5e60e58"><td class="memItemLeft" align="right" valign="top"><a id="ab2786a2d68f7cd647b6550d4b5e60e58"></a>
+<a class="el" href="class_tree_item.html">TreeItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tree_item.html#ab2786a2d68f7cd647b6550d4b5e60e58">_parent</a></td></tr>
+<tr class="memdesc:ab2786a2d68f7cd647b6550d4b5e60e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to parent node. <br /></td></tr>
 <tr class="separator:ab2786a2d68f7cd647b6550d4b5e60e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_tree_item.html">TreeItem</a> class provides node for constructing tree, that can be applied to tree model. </p>
+<div class="textblock"><p>Provides node for constructing tree, that can be applied to tree model. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a069e1b3b5e8b34c293abe0ce69ca5931"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a069e1b3b5e8b34c293abe0ce69ca5931">&#9670;&nbsp;</a></span>TreeItem()</h2>
@@ -156,24 +167,6 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a859429185d908c3e54861bbbfb185425"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a859429185d908c3e54861bbbfb185425">&#9670;&nbsp;</a></span>~TreeItem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TreeItem::~TreeItem </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Destructor. Deletes all children. </p>
 
 </div>
 </div>
@@ -362,76 +355,6 @@ Private Attributes</h2></td></tr>
 
 <p>Gets parent of the current node. </p>
 <dl class="section return"><dt>Returns</dt><dd>Parent of the current node. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3f224d18e5bd896d5e2673ce56b61f8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f224d18e5bd896d5e2673ce56b61f8e">&#9670;&nbsp;</a></span>_children</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QVector&lt;<a class="el" href="class_tree_item.html">TreeItem</a>*&gt; TreeItem::_children</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Vector of children nodes </p>
-
-</div>
-</div>
-<a id="ae5b4cf0e6a48cc71141d87aef569a34a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5b4cf0e6a48cc71141d87aef569a34a">&#9670;&nbsp;</a></span>_data</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QVector&lt;QVariant&gt; TreeItem::_data</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Vector of data </p>
-
-</div>
-</div>
-<a id="ab2786a2d68f7cd647b6550d4b5e60e58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2786a2d68f7cd647b6550d4b5e60e58">&#9670;&nbsp;</a></span>_parent</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_tree_item.html">TreeItem</a>* TreeItem::_parent</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Pointer to parent node </p>
 
 </div>
 </div>

@@ -72,6 +72,11 @@ $(function() {
 <div class="title">Metadata Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Reads metadata from file in real file system using WIN32 API.  
+ <a href="class_metadata.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="metadata_8hpp_source.html">metadata.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -79,10 +84,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a36401148621d78fa15716089d65922d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves the metadata values to file.  <a href="class_metadata.html#a36401148621d78fa15716089d65922d9">More...</a><br /></td></tr>
 <tr class="separator:a36401148621d78fa15716089d65922d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae293e3f026495063f4720fa2a7a87912"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#ae293e3f026495063f4720fa2a7a87912">Metadata</a> (const QString &amp;path)</td></tr>
-<tr class="memdesc:ae293e3f026495063f4720fa2a7a87912"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_metadata.html">Metadata</a> constructor reads metadata from file.  <a href="class_metadata.html#ae293e3f026495063f4720fa2a7a87912">More...</a><br /></td></tr>
+<tr class="memdesc:ae293e3f026495063f4720fa2a7a87912"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_metadata.html" title="Reads metadata from file in real file system using WIN32 API.">Metadata</a> constructor reads metadata from file.  <a href="class_metadata.html#ae293e3f026495063f4720fa2a7a87912">More...</a><br /></td></tr>
 <tr class="separator:ae293e3f026495063f4720fa2a7a87912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad15714360546db833fb74fd5866b2605"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#ad15714360546db833fb74fd5866b2605">Metadata</a> (const QDateTime &amp;<a class="el" href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">dateTimeCreation</a>, const QDateTime &amp;<a class="el" href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">dateTimeModification</a>, const uint64_t &amp;<a class="el" href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">length</a>, const QString &amp;<a class="el" href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">owner</a>, const QString &amp;<a class="el" href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">extension</a>)</td></tr>
-<tr class="memdesc:ad15714360546db833fb74fd5866b2605"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_metadata.html">Metadata</a> constructor.  <a href="class_metadata.html#ad15714360546db833fb74fd5866b2605">More...</a><br /></td></tr>
+<tr class="memdesc:ad15714360546db833fb74fd5866b2605"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_metadata.html" title="Reads metadata from file in real file system using WIN32 API.">Metadata</a> constructor.  <a href="class_metadata.html#ad15714360546db833fb74fd5866b2605">More...</a><br /></td></tr>
 <tr class="separator:ad15714360546db833fb74fd5866b2605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fb96dc784539c0dce81f2c0c0484c66"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_file_info.html">FileInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#a4fb96dc784539c0dce81f2c0c0484c66">doSearch</a> (const QString &amp;startSearchPath, const bool &amp;isAND)</td></tr>
 <tr class="memdesc:a4fb96dc784539c0dce81f2c0c0484c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">static function to search by this metadata.  <a href="class_metadata.html#a4fb96dc784539c0dce81f2c0c0484c66">More...</a><br /></td></tr>
@@ -96,15 +101,25 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0f2be865df325070317d5aa2ec26be16"><td class="memItemLeft" align="right" valign="top">QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">dateTimeCreation</a></td></tr>
+<tr class="memitem:a0f2be865df325070317d5aa2ec26be16"><td class="memItemLeft" align="right" valign="top"><a id="a0f2be865df325070317d5aa2ec26be16"></a>
+QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#a0f2be865df325070317d5aa2ec26be16">dateTimeCreation</a></td></tr>
+<tr class="memdesc:a0f2be865df325070317d5aa2ec26be16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date and time of creation. <br /></td></tr>
 <tr class="separator:a0f2be865df325070317d5aa2ec26be16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab59b3283c20cba1d7376e3bb00802d12"><td class="memItemLeft" align="right" valign="top">QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">dateTimeModification</a></td></tr>
+<tr class="memitem:ab59b3283c20cba1d7376e3bb00802d12"><td class="memItemLeft" align="right" valign="top"><a id="ab59b3283c20cba1d7376e3bb00802d12"></a>
+QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#ab59b3283c20cba1d7376e3bb00802d12">dateTimeModification</a></td></tr>
+<tr class="memdesc:ab59b3283c20cba1d7376e3bb00802d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date and time of modification. <br /></td></tr>
 <tr class="separator:ab59b3283c20cba1d7376e3bb00802d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9718484b941b5658f0528cdbfdb691a4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">length</a></td></tr>
+<tr class="memitem:a9718484b941b5658f0528cdbfdb691a4"><td class="memItemLeft" align="right" valign="top"><a id="a9718484b941b5658f0528cdbfdb691a4"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#a9718484b941b5658f0528cdbfdb691a4">length</a></td></tr>
+<tr class="memdesc:a9718484b941b5658f0528cdbfdb691a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of file in bytes. <br /></td></tr>
 <tr class="separator:a9718484b941b5658f0528cdbfdb691a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af801e315949c56a4f09b8a4b3fa97815"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">owner</a></td></tr>
+<tr class="memitem:af801e315949c56a4f09b8a4b3fa97815"><td class="memItemLeft" align="right" valign="top"><a id="af801e315949c56a4f09b8a4b3fa97815"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#af801e315949c56a4f09b8a4b3fa97815">owner</a></td></tr>
+<tr class="memdesc:af801e315949c56a4f09b8a4b3fa97815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of owner. <br /></td></tr>
 <tr class="separator:af801e315949c56a4f09b8a4b3fa97815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07edee9bc3e10615a72c20c6247517f9"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">extension</a></td></tr>
+<tr class="memitem:a07edee9bc3e10615a72c20c6247517f9"><td class="memItemLeft" align="right" valign="top"><a id="a07edee9bc3e10615a72c20c6247517f9"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_metadata.html#a07edee9bc3e10615a72c20c6247517f9">extension</a></td></tr>
+<tr class="memdesc:a07edee9bc3e10615a72c20c6247517f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">File extension. <br /></td></tr>
 <tr class="separator:a07edee9bc3e10615a72c20c6247517f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -131,7 +146,9 @@ Private Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>matchesCriterion</b> (const QString &amp;path, const bool &amp;isAND)</td></tr>
 <tr class="separator:afe8e0ceb9ebb2a510ea7b2693cb70c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Reads metadata from file in real file system using WIN32 API. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae293e3f026495063f4720fa2a7a87912"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae293e3f026495063f4720fa2a7a87912">&#9670;&nbsp;</a></span>Metadata() <span class="overload">[1/2]</span></h2>
 
@@ -148,7 +165,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>matchesCriterion</b> 
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_metadata.html">Metadata</a> constructor reads metadata from file. </p>
+<p><a class="el" href="class_metadata.html" title="Reads metadata from file in real file system using WIN32 API.">Metadata</a> constructor reads metadata from file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path[in]</td><td>path of the file to read. </td></tr>
@@ -202,7 +219,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>matchesCriterion</b> 
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_metadata.html">Metadata</a> constructor. </p>
+<p><a class="el" href="class_metadata.html" title="Reads metadata from file in real file system using WIN32 API.">Metadata</a> constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dateTimeCreation[in]</td><td>Date and time of creation. </td></tr>
@@ -547,82 +564,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>matchesCriterion</b> 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if write was successful. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a0f2be865df325070317d5aa2ec26be16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f2be865df325070317d5aa2ec26be16">&#9670;&nbsp;</a></span>dateTimeCreation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QDateTime Metadata::dateTimeCreation</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Date and time of creation. </p>
-
-</div>
-</div>
-<a id="ab59b3283c20cba1d7376e3bb00802d12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab59b3283c20cba1d7376e3bb00802d12">&#9670;&nbsp;</a></span>dateTimeModification</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QDateTime Metadata::dateTimeModification</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Date and time of modification. </p>
-
-</div>
-</div>
-<a id="a07edee9bc3e10615a72c20c6247517f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07edee9bc3e10615a72c20c6247517f9">&#9670;&nbsp;</a></span>extension</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString Metadata::extension</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>File extension. </p>
-
-</div>
-</div>
-<a id="a9718484b941b5658f0528cdbfdb691a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9718484b941b5658f0528cdbfdb691a4">&#9670;&nbsp;</a></span>length</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t Metadata::length</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Length of file in bytes. </p>
-
-</div>
-</div>
-<a id="af801e315949c56a4f09b8a4b3fa97815"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af801e315949c56a4f09b8a4b3fa97815">&#9670;&nbsp;</a></span>owner</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString Metadata::owner</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Name of owner. </p>
 
 </div>
 </div>
