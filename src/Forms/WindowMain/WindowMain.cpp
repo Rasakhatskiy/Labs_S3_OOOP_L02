@@ -89,8 +89,8 @@ void MainWindow::on_button_browseSaveAs_clicked()
     auto resultPath = CallSaveFileDialog();
     auto sourcePath = isSourceValid();
 
-    if (sourcePath == NULL ||
-        resultPath == NULL)
+    if (sourcePath == nullptr ||
+        resultPath == nullptr)
         return;
 
 
@@ -117,7 +117,7 @@ void MainWindow::on_button_startEditMetadata_clicked()
 {
 
     auto path = CallOpenFileDialog();
-    if (path == NULL) return;
+    if (path == nullptr) return;
     auto modifyWindow = new WindowMetadata(path);
     modifyWindow->show();
 }
@@ -125,7 +125,7 @@ void MainWindow::on_button_startEditMetadata_clicked()
 void MainWindow::on_button_SearchMetadata_clicked()
 {
     auto path = CallDirDialog();
-    if (path == NULL)
+    if (path == nullptr)
         return;
 
     auto window = new WindowMetadataSearch(path, this);
@@ -135,7 +135,7 @@ void MainWindow::on_button_SearchMetadata_clicked()
 void MainWindow::on_button_open_clicked()
 {
     auto path = CallOpenFileDialog();
-    if (path == NULL) return;
+    if (path == nullptr) return;
 
     InfoSaver infoSaver;
     infoSaver.open(path);
@@ -177,7 +177,7 @@ QString MainWindow::CallSaveFileDialog()
 QString MainWindow::CallDirDialog()
 {
     QFileDialog dialog_saveAs(this);
-    dialog_saveAs.setFileMode(QFileDialog::DirectoryOnly);
+    dialog_saveAs.setFileMode(QFileDialog::Directory);
     dialog_saveAs.setDirectory("D:\\");
     dialog_saveAs.setWindowTitle("Select directory");
     dialog_saveAs.setViewMode(QFileDialog::Detail);
