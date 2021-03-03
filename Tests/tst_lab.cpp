@@ -2,6 +2,7 @@
 
 // add necessary includes here
 #include <filesystem>
+#include <fstream>
 
 #include "../src/FileInfo/fileinfo.hpp"
 
@@ -36,10 +37,18 @@ void lab::test_case1()
 
 void lab::test_filesystem()
 {
-    auto path = QString::fromStdString(std::filesystem::current_path().string()) + QDir::separator() + "file.check";
-    QFile file(path);
-    FileInfo fileInfo("E:\\Downloads\\Лабороторна_2_Довбуш.accdb");
+    auto path = std::filesystem::current_path();
+    auto fileName = path.u8string() + "\\file.file";
+    std::ofstream file(fileName);
+    auto qstringPath = QString::fromUtf8(fileName.c_str());
+    FileInfo fileInfo(qstringPath);
 
+
+    QCOMPARE(qstringPath.replace('\\', '/'), fileInfo.getFullpath());
+    QCOMPARE(0, fileInfo.getLength());
+    QCOMPARE(fileInfo.isDir(), false);
+    QCOMPARE(fileInfo.isFile(), true);
+    QCOMPARE(fileInfo.isSymLink(), false);
 }
 
 QTEST_APPLESS_MAIN(lab)
