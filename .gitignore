@@ -1,6 +1,8 @@
 # This file is used to ignore files which are generated
 # ----------------------------------------------------------------------------
 
+*build-Tests-Desktop_Qt_6_0_1_MSVC2019_64bit-Debug*
+
 *~
 *.autosave
 *.a
